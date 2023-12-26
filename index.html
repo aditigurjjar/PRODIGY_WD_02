@@ -1,0 +1,54 @@
+
+  <!DOCTYPE html>
+  <html lang="en">
+  
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="style.css">
+      <title>Tic Tac Toe</title>
+      <link rel="icon" href="favicon/favicon.ico" type="image/x-icon">
+      <h1>TIC TAC TOE</h1>
+  
+      <style>
+          h1 {
+              text-align: center;
+              color: white;
+              text-decoration-style: solid;
+          }
+      </style>
+  </head>
+  
+  
+  <body>
+      <div class="container" id="container">
+          <div id="winning-message" class="winning-message">
+              <div class="game-status" id="game-status"></div>
+              <div class="winner" id="winner"></div>
+          </div>
+          <div class="question" id="qsn1">
+              <div class="qsn-txt">Play With?</div>
+              <div class="btns"><button class="btn-player" id="ai">Computer</button><button class="btn-player" id="friend">Friend</button></div>
+          </div>
+          <div class="question" id="qsn2">
+              <div class="qsn-txt">Who Play First?</div>
+              <div class="btns"><button class="btn-player" id="player1">Computer</button><button class="btn-player" id="player2">You</button></div>
+          </div>
+          <div class="board" id="board">
+              <div class="cell" id="0" onclick="makeMove(0);"></div>
+              <div class="cell" id="1" onclick="makeMove(1);"></div>
+              <div class="cell" id="2" onclick="makeMove(2);"></div>
+              <div class="cell" id="3" onclick="makeMove(3);"></div>
+              <div class="cell" id="4" onclick="makeMove(4);"></div>
+              <div class="cell" id="5" onclick="makeMove(5);"></div>
+              <div class="cell" id="6" onclick="makeMove(6);"></div>
+              <div class="cell" id="7" onclick="makeMove(7);"></div>
+              <div class="cell" id="8" onclick="makeMove(8);"></div>
+          </div>
+          <div class="btn-restart" id="restart">RESTART</div>
+      </div>
+      <div id="credit">Developed By <a href="www.linkedin.com/in/aditi-gurjar-776144268">Aditi Gurjar</a></div>
+      <script src="script.js"></script>
+  </body>
+  
+  </html>
